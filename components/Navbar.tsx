@@ -64,7 +64,7 @@ export default function Navbar() {
         <nav className="flex items-center gap-10">
           {links.map((link, index) => (
             <Link
-              key={index}
+              key={link.title}
               href={link.href}
               className="text-sm hover:text-primary font-semibold"
             >

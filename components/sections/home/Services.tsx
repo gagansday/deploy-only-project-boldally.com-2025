@@ -59,7 +59,7 @@ export default function Services() {
         {services.map((service, index) => (
           <Link href={service.href}>
             <div
-              key={index}
+              key={service.title}
               className={cn(
                 "relative flex items-center gap-8 py-6 px-8 border-b border-slate-200 hover:text-slate-950 transition-all hover:border-0 hover:bg-white group",
                 {

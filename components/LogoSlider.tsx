@@ -32,6 +32,7 @@ import watsupUsa from "@/assets/client-logos/watsup-usa.png";
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Fragment } from "react";
 interface Logo {
   image: string;
   className?: string;
@@ -82,17 +83,19 @@ export default function LogoSlider() {
     <div className="relative overflow-clip">
       <div className="bg-logo-slider absolute z-10 inset-0"></div>
       <div className="flex items-center w-[max-content] gap-14 pr-14 animate-[scroll_60s_linear_infinite]">
-        {Array.from({ length: 2 }).map((_, i) =>
-          clientLogos.map((logo, index) => (
-            <Image
-              key={"key" + i + index}
-              src={logo.image}
-              alt=""
-              priority={true}
-              className={cn(`${logo.className}`, "flex-none w-fit")}
-            />
-          ))
-        )}
+        {Array.from({ length: 2 }).map((_, i) => (
+          <Fragment key={i}>
+            {clientLogos.map((logo, index) => (
+              <Image
+                key={"key" + i + index}
+                src={logo.image}
+                alt=""
+                priority={true}
+                className={cn(`${logo.className}`, "flex-none w-fit")}
+              />
+            ))}
+          </Fragment>
+        ))}
       </div>
     </div>
   );
