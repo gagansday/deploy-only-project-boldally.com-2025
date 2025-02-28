@@ -1,3 +1,5 @@
+import BackgroundLight from "@/components/BackgroundLight";
+import BackgroundLogo from "@/components/BackgroundLogo";
 import Navbar from "@/components/Navbar";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
@@ -15,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${plusJakartaSans.variable}  font-sans relative`}>
-        <div className="w-[528px] aspect-square bg-secondary rounded-full -z-50 blur-[100px] absolute left-1/2 -translate-1/2"></div>
+        <BackgroundLight />
         <Navbar />
+        <BackgroundLogo />
         {children}
+        <div className="mb-[9999px]"></div>
       </body>
     </html>
   );

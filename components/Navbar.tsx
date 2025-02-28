@@ -46,7 +46,7 @@ export default function Navbar() {
       </div>
 
       <Button asChild variant="outline">
-        <Link href="/contact">Get a free quote</Link>
+        <Link href="/contact">Get a Free Quote</Link>
       </Button>
     </div>
   );
