@@ -9,12 +9,12 @@ export default function Hero() {
     <section className="py-24 max-w-7xl w-full mx-auto">
       <div className="flex gap-8 justify-center py-16">
         <div className="">
-          <h1 className="text-7xl leading-tight">
+          <h1 className="text-7xl leading-tight font-semibold">
             We Build{" "}
             <span className="text-primary">Websites, Apps and Software</span>{" "}
             That People Love
           </h1>
-          <p className="mt-6">
+          <p className="mt-6 text-xl">
             Simple, user-friendly, and high-performing—just the way it should
             be.
           </p>
