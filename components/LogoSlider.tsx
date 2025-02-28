@@ -83,15 +83,21 @@ const clientLogos: Logo[] = [
 
 export default function LogoSlider() {
   return (
-    <div className="flex items-center gap-14 overflow-scroll">
-      {clientLogos.map((logo, index) => (
-        <Image
-          key={index}
-          src={logo.image}
-          alt=""
-          className={cn(`${logo.className}`, "w-fit flex-none")}
-        />
-      ))}
+    <div className="relative overflow-clip">
+      <div className="bg-logo-slider absolute z-10 inset-0"></div>
+      <div className="flex items-center w-[max-content] gap-14 pr-14 animate-[scroll_50s_linear_infinite]">
+        {Array.from({ length: 2 }).map((_, i) =>
+          clientLogos.map((logo, index) => (
+            <Image
+              key={"key" + i + index}
+              src={logo.image}
+              alt=""
+              priority={true}
+              className={cn(`${logo.className}`, "flex-none w-fit")}
+            />
+          ))
+        )}
+      </div>
     </div>
   );
 }

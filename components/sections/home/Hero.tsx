@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="py-24 max-w-7xl w-full mx-auto">
-      <div className="flex gap-8 justify-center py-16">
+    <section className="py-24">
+      <div className="max-w-7xl w-full mx-auto flex gap-8 justify-center py-16">
         <div className="">
           <h1 className="text-7xl leading-tight font-semibold">
             We Build{" "}
@@ -27,11 +27,11 @@ export default function Hero() {
         <Image src={heroImage} width={500} alt="" />
       </div>
 
-      <div className="mt-10">
+      <div className="mt-10 px-20">
         <div className="text-center">
           Trusted by 100+ satisfied clients across the globe.
         </div>
-        <div className="mt-10">
+        <div className="mt-6">
           <LogoSlider />
         </div>
       </div>

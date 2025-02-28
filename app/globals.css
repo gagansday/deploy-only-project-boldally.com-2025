@@ -124,3 +124,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-logo-slider {
+  background: linear-gradient(
+    90deg,
+    #07072f 0%,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0) 90%,
+    #07072f 100%
+  );
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
