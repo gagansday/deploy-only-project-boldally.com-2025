@@ -17,11 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${plusJakartaSans.variable}  font-sans relative`}>
-        <BackgroundLight />
+        <BackgroundLight className="left-1/2 -translate-1/2" />
         <Navbar />
         <BackgroundLogo />
         {children}
-        <div className="mb-[9999px]"></div>
       </body>
     </html>
   );

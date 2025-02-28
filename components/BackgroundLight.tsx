@@ -7,7 +7,7 @@ export default function BackgroundLight(
     <div
       {...props}
       className={cn(
-        `w-[528px] aspect-square bg-secondary rounded-full -z-50 blur-[100px] absolute left-1/2 -translate-1/2
+        `absolute w-[528px] aspect-square bg-secondary rounded-full -z-50 blur-[100px]
         ${props.className}`
       )}
     ></div>
