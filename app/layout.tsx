@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="apple-mobile-web-app-title" content="Boldally" />
       <body className={`${plusJakartaSans.variable}  font-sans relative`}>
         <BackgroundLight className="left-1/2 -translate-1/2" />
         <Navbar />
