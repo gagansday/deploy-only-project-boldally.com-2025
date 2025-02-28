@@ -12,7 +12,6 @@ import galeciaGroup from "@/assets/client-logos/galecia-group.png";
 import globusMachinesPvtLtd from "@/assets/client-logos/globus-machines-pvt-ltd.png";
 import hasten from "@/assets/client-logos/hasten.png";
 import heavenlyHome from "@/assets/client-logos/heavenly-home.png";
-import jyotiAyurClinicLogo from "@/assets/client-logos/jyoti-ayur-clinic-logo.png";
 import lazyBaby from "@/assets/client-logos/lazy-baby.svg";
 import mspGlobal from "@/assets/client-logos/msp-global.png";
 import myDreamHomeCare from "@/assets/client-logos/my-dream-home-care.png";
@@ -22,7 +21,6 @@ import organishHerbal from "@/assets/client-logos/organish-herbal.png";
 import seoscout from "@/assets/client-logos/seoscout.svg";
 import texTrend from "@/assets/client-logos/tex-trend.svg";
 import theInsuranceProblem from "@/assets/client-logos/the-insurance-problem.png";
-import theNutritionBox from "@/assets/client-logos/the-nutrition-box.png";
 import theAirApp from "@/assets/client-logos/theairapp.svg";
 import triStates from "@/assets/client-logos/tri-states.png";
 import upkarGroup from "@/assets/client-logos/upkar-group.png";
@@ -51,7 +49,7 @@ const clientLogos: Logo[] = [
     className: "h-10 invert brightness-0",
   },
   { image: chromaTechServices, className: "h-10 invert brightness-0" },
-  { image: cityLineCollection, className: "h-9 invert brightness-0" },
+  { image: cityLineCollection, className: "h-12 invert brightness-0" },
   { image: companiesHouse, className: "h-10 invert" },
   { image: dietitianMiksha, className: "h-10 invert brightness-0" },
   { image: emerhub, className: "h-10 invert" },
@@ -60,7 +58,6 @@ const clientLogos: Logo[] = [
   { image: globusMachinesPvtLtd, className: "h-10 invert brightness-0" },
   { image: hasten, className: "h-12 invert brightness-0" },
   { image: heavenlyHome, className: "h-14 invert brightness-0" },
-  { image: jyotiAyurClinicLogo, className: "h-10 invert brightness-0" },
   { image: lazyBaby, className: "h-10 invert brightness-0" },
   { image: onKampus, className: "h-10 invert brightness-0" },
   { image: mspGlobal, className: "h-10 invert brightness-0" },
@@ -70,7 +67,6 @@ const clientLogos: Logo[] = [
   { image: seoscout, className: "h-10 invert grayscale brightness-50" },
   { image: texTrend, className: "h-10 invert brightness-0" },
   { image: theInsuranceProblem, className: "h-10 invert brightness-0" },
-  { image: theNutritionBox, className: "h-10" },
   { image: theAirApp, className: "h-10 invert grayscale brightness-50" },
   { image: triStates, className: "h-10 invert brightness-0" },
   { image: upkarGroup, className: "h-10 invert brightness-0" },
@@ -85,7 +81,7 @@ export default function LogoSlider() {
   return (
     <div className="relative overflow-clip">
       <div className="bg-logo-slider absolute z-10 inset-0"></div>
-      <div className="flex items-center w-[max-content] gap-14 pr-14 animate-[scroll_50s_linear_infinite]">
+      <div className="flex items-center w-[max-content] gap-14 pr-14 animate-[scroll_60s_linear_infinite]">
         {Array.from({ length: 2 }).map((_, i) =>
           clientLogos.map((logo, index) => (
             <Image
