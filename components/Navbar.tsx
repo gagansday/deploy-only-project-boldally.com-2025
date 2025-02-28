@@ -73,7 +73,13 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <Button asChild variant="outline">
+        <Button
+          asChild
+          variant="outline"
+          className={cn({
+            "rounded-full": isScrolled,
+          })}
+        >
           <Link href="/contact">Get a Free Quote</Link>
         </Button>
       </div>
