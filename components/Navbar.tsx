@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <header
       className={cn("w-full", {
-        "fixed top-0": isScrolled,
+        "fixed z-50 top-0": isScrolled,
       })}
     >
       <div

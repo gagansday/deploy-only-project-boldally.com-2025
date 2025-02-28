@@ -1,11 +1,40 @@
+import heroImage from "@/assets/home/hero.png";
+import LogoSlider from "@/components/LogoSlider";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <div>
-      <h1 className="mt-80 text-7xl text-center">Hero</h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum
-      quaerat pariatur alias praesentium vel voluptate magnam omnis error et
-      molestiae laboriosam architecto exercitationem autem, voluptas illum
-      nesciunt voluptates nisi!
-    </div>
+    <section className="py-24 max-w-7xl w-full mx-auto">
+      <div className="flex gap-8 justify-center py-16">
+        <div className="">
+          <h1 className="text-7xl leading-tight">
+            We Build{" "}
+            <span className="text-primary">Websites, Apps and Software</span>{" "}
+            That People Love
+          </h1>
+          <p className="mt-6">
+            Simple, user-friendly, and high-performing—just the way it should
+            be.
+          </p>
+
+          <Button asChild className="mt-10">
+            <Link href="/contact">Get a Free Quote</Link>
+          </Button>
+        </div>
+
+        <Image src={heroImage} width={500} alt="" />
+      </div>
+
+      <div className="mt-10">
+        <div className="text-center">
+          Trusted by 100+ satisfied clients across the globe.
+        </div>
+        <div className="mt-10">
+          <LogoSlider />
+        </div>
+      </div>
+    </section>
   );
 }
