@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin 'tailwindcss-animate';
 
@@ -11,9 +11,9 @@
   --card-foreground: var(--foreground);
   --popover: var(--background);
   --popover-foreground: var(--foreground);
-  --primary: oklch(27.22% 0.1702 267.31);
+  --primary: oklch(63.67% 0.142487 238.5877);
   --primary-foreground: var(--foreground);
-  --secondary: oklch(53.66% 0.2728 286.56);
+  --secondary: oklch(27.22% 0.1702 267.31);
   --secondary-foreground: var(--foreground);
   --muted: oklch(69.05% 0.1855 10.9);
   --muted-foreground: var(--foreground);
