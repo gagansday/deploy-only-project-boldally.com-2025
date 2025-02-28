@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="py-24">
-      <div className="max-w-7xl w-full mx-auto flex gap-8 justify-center py-16">
+      <div className="max-w-7xl w-full mx-auto flex gap-2 items-center py-16">
         <div className="">
           <h1 className="text-7xl leading-tight font-semibold">
             We Build{" "}
@@ -24,7 +24,7 @@ export default function Hero() {
           </Button>
         </div>
 
-        <Image src={heroImage} width={500} alt="" />
+        <Image src={heroImage} alt="" className="aspect-squarer" />
       </div>
 
       <div className="mt-10 px-20">
