@@ -5,23 +5,25 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --background: oklch(15.54% 0.0841 271.02); /* #04042f; */
+  --foreground: oklch(100% 0 0);
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(27.22% 0.1702 267.31);
+  --primary-foreground: var(--foreground);
+  --secondary: oklch(53.66% 0.2728 286.56);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(69.05% 0.1855 10.9);
+  --muted-foreground: var(--foreground);
+  --accent: oklch(53.66% 0.2728 286.56);
+  --accent-foreground: var(--foreground);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.929 0.013 255.508);
+  --destructive-foreground: var(--foreground);
+  --border: oklch(100% 0 0 / 10%);
+
+  /* TODO udpate below colors */
   --input: oklch(0.929 0.013 255.508);
   --ring: oklch(0.869 0.022 252.894);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -40,7 +42,7 @@
   --sidebar-ring: oklch(0.869 0.022 252.894);
 }
 
-.dark {
+/* .dark {
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
   --card: oklch(0.129 0.042 264.695);
@@ -73,7 +75,7 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(0.279 0.041 260.031);
   --sidebar-ring: oklch(0.446 0.043 257.281);
-}
+} */
 
 @theme inline {
   --color-background: var(--background);
