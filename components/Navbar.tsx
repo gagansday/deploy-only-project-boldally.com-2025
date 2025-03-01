@@ -62,7 +62,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="flex items-center gap-10">
-          {links.map((link, index) => (
+          {links.map((link) => (
             <Link
               key={link.title}
               href={link.href}
