@@ -60,7 +60,7 @@ export default function Services() {
           <Link href={service.href} key={service.title}>
             <div
               className={cn(
-                "relative flex items-center gap-8 py-6 px-8 border-b border-slate-200 hover:text-slate-950 transition-all hover:border-0 hover:bg-white group",
+                "relative flex items-center gap-8 py-6 px-8 border-b border-slate-200 hover:text-slate-950 transition-all hover:border-white hover:bg-white group",
                 {
                   "border-t": index === 0,
                 }
@@ -71,7 +71,7 @@ export default function Services() {
               </h3>
               <div className="flex-none">{service.description}</div>
 
-              <div className="ml-auto size-12 rounded-full border-2 flex justify-center items-center border-slate-200 group-hover:bg-primary group-hover:text-white group-hover:-rotate-45 transition-all">
+              <div className="ml-auto size-12 rounded-full border-2 flex justify-center items-center border-slate-200 group-hover:bg-primary group-hover:border-primary group-hover:text-white group-hover:-rotate-45 transition-all">
                 <svg
                   width="24"
                   height="24"
