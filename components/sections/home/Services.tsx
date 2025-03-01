@@ -69,7 +69,9 @@ export default function Services() {
               <h3 className="flex-none text-3xl font-semibold w-96">
                 {service.title}
               </h3>
-              <div className="flex-none">{service.description}</div>
+              <div className="flex-none text-slate-200">
+                {service.description}
+              </div>
 
               <div className="ml-auto size-12 rounded-full border-2 flex justify-center items-center border-slate-200 group-hover:bg-primary group-hover:border-primary group-hover:text-white group-hover:-rotate-45 transition-all">
                 <svg
