@@ -24,7 +24,7 @@ export default function Hero() {
           </Button>
         </div>
 
-        <Image src={heroImage} alt="" className="aspect-squarer" />
+        <Image src={heroImage} alt="" width={500} className="aspect-square" />
       </div>
 
       <div className="mt-10 px-20">
